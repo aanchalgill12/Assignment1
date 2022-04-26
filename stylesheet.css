@@ -23,7 +23,7 @@
 }
 .header
 {
-    color: #4d4d4d;
+    /* color: #4d4d4d; */
     padding: 15px 0px 15px 0px;
     background-color: #ececec;
 }
@@ -31,13 +31,13 @@
 .navbar
 {
     background-color: #ececec;
-    padding: 0px ;   
+    padding: 0px !important;   
     
 }
-.nav-link
+/* .nav-link
 {
-    color:#4d4d4d;
-}
+    color:#4d4d4d !important;
+} */
 
 .img-fluid
 {
@@ -65,9 +65,9 @@
 
 .btn-centered
 {
-    font-size: 24px;
-    font-weight:600 ;
-      color:#d52037;
+    font-size: 24px !important;
+    font-weight:600 !important;
+    color:#d52037;
     
     position: absolute;
     top: 70%;
@@ -94,10 +94,10 @@
 }
 .btn-style
 {
-  padding:0px 0px 0px 0px;
-  text-decoration: underline;
+  padding:0px 0px 0px 0px !important;
+  text-decoration: underline !important;
   font-style: italic;
-  color:#d52037 ;
+  color:#d52037 !important;
 }
 .map
 {
@@ -108,7 +108,7 @@
 .btn-background-color
 {
 background: #db1e36;
-font-size: 24px;
+font-size: 24px !important;
 color:#ffffff;
 }
 .video
@@ -118,8 +118,8 @@ color:#ffffff;
 }
 .form-1
 {
-  background-color:#e4e4e4;
-  font-size: 14px ;
+  background-color:#e4e4e4 !important;
+  font-size: 14px !important;
   font-style: italic;
 }
 html
@@ -134,7 +134,17 @@ html
     .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
       border-right: 1px solid #4D4D4D;
     }
+  }
 
+  #navbarR .navbar-nav li > a {
+    color: #4D4D4D;
+  }
+  #navbarR .navbar-nav li > a:hover,
+  #navbarNav .navbar-nav li > a:focus {
+    color: #D52037;
+  }
+  #navbarR .navbar-nav li.active > a {
+    color: #D52037;
   }
 
 /* Media Query For Small Devices*/
@@ -142,7 +152,7 @@ html
 {
     .centered
     {
-        /* font-size: 36px; */
+        font-size: 36px;
         position: absolute;
         top:40%;
         left:50%;
@@ -151,9 +161,9 @@ html
     
     .btn-centered
     {
-        /* font-size: 16px ; */
+        /* font-size: 16px !important; */
         position: absolute; 
-        top: 90%;
+        top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -161,27 +171,7 @@ html
 }  
 
 
-@media only screen and (min-width: 320px) and (max-width: 570)
-{
-    .centered
-    {
-        /* font-size: 36px; */
-        position: absolute;
-        top:20%;
-        left:50%;
-        font-size: 20px ;
-        transform: translate(-50%, -50%);
-     }
-    
-    .btn-centered
-    {
-        /* font-size: 16px ; */
-        position: absolute; 
-        top: 40% !important;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
+
 
 
 
